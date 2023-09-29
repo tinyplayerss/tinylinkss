@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('monument-valley.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    background-image: url('monument-valley.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.linktree {
+    text-align: center;
+    margin: 20px auto; /* Center the link buttons */
+}
+
+.link {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.link:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.link a {
+    text-decoration: none;
+    color: #333;
+}
+
+.link img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.link h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link:hover h3 {
+    transform: scale(1.2);
+}
+
+.link span.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.site-icon {
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
