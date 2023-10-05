@@ -98,6 +98,7 @@ img:hover {
     max-width: 1300px;
     margin: 0 auto;
     background-color: rgba(70, 70, 70, 0.5);
+    text-align: justify;
 }
 
 .center-details {
