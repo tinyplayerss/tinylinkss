@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Publica Play Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Publica Play Regular'), url('FaceType - PublicaPlay-Regular.woff') format('woff');
+    }
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Publica Play', Arial, sans-serif; /* Use Publica Play font */
+    font-family: 'Publica Play Regular'; /* Use Publica Play font */
     background-color: #333; /* Dark background color */
     color: #fff; /* White text color */
     display: block;
