@@ -1,126 +1,102 @@
-@font-face {
-    font-family: 'Publica Play Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Publica Play Regular'), url('FaceType - PublicaPlay-Regular.woff') format('woff');
-    }
+* {
+    cursor: context-menu;
+    user-select: none;
+    text-decoration:none;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Publica Play Regular'; /* Use Publica Play font */
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    display: block;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.container {
-    text-align: center;
-    border-radius: 20px; /* Rounded container */
-    backdrop-filter: blur(10px);
-    background-color: rgb(46, 46, 46, 0.5); /* Semi-transparent white background */
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    padding: 10px auto; /* Padding for the square box */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
-    border: 1px solid black;
-    scale: 0.9;
-    max-width: 350px;
-    margin: 0 auto;
-}
-
-header {
-    margin-bottom: 20px;
+    color: white;
 }
 
 h1 {
-    padding-bottom: 30px;
-    font-size: 30px;
-    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3)
 }
 
-.pfp {
-    border-radius: 30px;
-    justify-content: center;
-    scale: 1.2;
-}
-
-img {
-    transition: scale 0.3s ease;
-}
-
-img:hover {
-    scale: 1.25;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin: 20px auto;
-}
-
-.link-button {
-    margin: 10px 0;
-}
-
-.rounded-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff; /* White button background */
-    color: #333; /* Dark button text color */
-    border-radius: 30px; /* Rounded button */
-    text-decoration: none;
-    transition: background-color 0.5s ease;
-    margin: 0 auto;
-    width: 250px;
-}
-
-.rounded-button:hover {
-    background-color: #43e082; /* Darken button on hover */
-    
-}
-
-.divider-large {
-    border-bottom: transparent;
-    margin-bottom: 40px;
-}
-
-.para {
-    border: 1px solid black;
-    padding: 20px;
-    margin-bottom: 10px;
-    backdrop-filter: blur(10px);
+p {
     color: white;
+    background-color: rgba(000, 000, 000, 20%);
     border-radius: 10px;
-    max-width: 1300px;
-    margin: 0 auto;
-    background-color: rgba(70, 70, 70, 0.5);
-    text-align: justify;
-}
-
-.center-details {
-    text-align-last: center;
-}
-
-.clickable-link {
-    color: rgb(93, 255, 252);
-}
-
-.clickable-link:hover {
-    color: rgb(0, 0, 0);
-    background-color: white;
     padding: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+}
+
+.mainscreen {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    width: 500px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
     border-radius: 10px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 3px 3px 25px black;
+    backdrop-filter: blur(8px);
+}
+
+.divider-short {
+    opacity: 5%;
+    border-radius: 5px;
+    border: 5px solid white;
+    margin: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.divider {
+    opacity: 5%;
+    border-radius: 5px;
+    border: 5px solid white;
+    margin: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.visuals {
+    display: grid;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 85%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+button {
+    position: relative;
+    width: 350px;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: width 0.2s, border 0.2s ease;
+}
+
+button:hover {
+    width: 365px;
+    background-color: rgb(056, 072, 082);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin: 0 auto;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    transform: scale(1.15)
+    transition: ;
 }
