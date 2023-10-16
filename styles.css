@@ -68,7 +68,7 @@ p {
 
 button {
     position: relative;
-    width: 390px;
+    width: 420px;
     font-size: 24px;
     padding: 10px;
     margin: 0 auto;
@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {
-    width: 365px;
+    width: 450px;
     background-color: rgb(056, 072, 082);
 }
 
